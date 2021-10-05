@@ -1,0 +1,61 @@
+<html>
+    <style>
+        table{
+            border: solid 1pt black;
+            border-collapse: collapse;
+        }
+        td{
+            border:solid 1pt black;
+            padding:10pt
+            
+        }
+        thead tr{
+            background-color: blue;
+        }
+        th{
+            padding: 0.75em;
+        }
+    </style>
+    <table>
+        <caption>Biaya Pendaftaran sesuai bidang usaha</caption><!--kayak judul tabelnya-->
+        <thead>
+            <tr>
+                <th>Bidang</th>
+                <th>Biaya Pendaftaran</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Laundry </td>
+                <td>Rp5.000.000,00</td>
+            </tr>
+            <tr>
+                <td>Percetakan</td>
+                <td>Rp.10.000.000,00</td>
+            </tr>
+        </tbody>
+    </table>
+    <form method="GET" action="process.php">
+        <fieldset>
+            <legend>Halaman Pendaftaran mitra usaha</legend>
+            <p>
+                <label>Nama :</label>
+                <input type="text" name="Nama"/>
+            </p>
+            <p>
+                <label>NIK : </label>
+                <input type="text" name="NIK"/>
+            </p>
+            <p>
+                <label>Bidang Usaha:</label>
+                <select name="where">
+                    <option value=""disabled selected hidden>Pilih bidang usaha</option>
+                    <option>Laundry</option>
+                    <option>Percetakan</option>
+                </select>
+            </p>
+            <input type="submit"/>
+            <a href="dummy.html">Lihat informasi pendaftaran</a>
+        </fieldset>
+    </form>
+</html>
